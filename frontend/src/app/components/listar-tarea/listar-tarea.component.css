@@ -1,0 +1,55 @@
+.example-list-wrapping {
+    max-width: 500px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+h3{
+    margin: 0 10%;
+}
+section {
+  display: table;
+}
+.example-button-row {
+  display: flex;
+  justify-content: left;
+  width: 120px;
+  color: rgb(16, 8, 131);
+}
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+.example-icon {
+  padding: 0 14px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.edit{
+  cursor: pointer;
+  color: #187890;
+}
+.delete{
+  cursor: pointer;
+  color:  #e15639;
+}
+.agregar{
+  font-size: 10px;
+  line-height: 28px;
+}
+mat-form-field {
+  margin-right: 12px;
+}
+.ver{
+  cursor: pointer;
+
+}
+.example-button-row{
+  left: 50px;
+}

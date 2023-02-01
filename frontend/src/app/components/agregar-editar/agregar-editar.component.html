@@ -1,0 +1,51 @@
+<div class="Title">
+    <h1>{{ operacion }} Tarea</h1>
+</div>
+
+
+<div class="container">
+    <mat-card class="card">
+        <mat-card-subtitle>
+            Formulario llenar tarea
+        </mat-card-subtitle>
+            <form [formGroup]="form" (ngSubmit)="agregartarea()">
+                <mat-grid-list cols="2" rowHeight="90px">
+                    <mat-grid-tile >
+                        <!-- <mat-form-field appearance="outline">  -->
+                            <mat-label>user</mat-label>
+                            <input formControluser="user" matInput autocomplete="off" >
+                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                            
+                        <!-- </mat-form-field> -->
+                         
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <!-- <mat-form-field appearance="outline"> -->
+                            <mat-label>linea</mat-label>
+                            <input formControllinea="linea" matInput autocomplete="off" >
+                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        <!-- </mat-form-field> -->
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <!-- <mat-form-field appearance="outline"> -->
+                            <mat-label>concepto</mat-label>
+                            <input formControlconcepto="concepto" matInput matInput autocomplete="off">
+                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        <!-- </mat-form-field>     -->
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <!-- <mat-form-field appearance="outline"> -->
+                            <mat-label>hora</mat-label>
+                            <input type ="number" formControlhora="hora"matInput  matInput autocomplete="off">
+                            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <!-- </mat-form-field> -->
+                    </mat-grid-tile>
+                    <mat-grid-tile [colspan]="2">
+                        <button  type="submit" mat-raised-button color="primary">Guardar</button>
+                        <button  class="btnaceptar" mat-raised-button routerLink="/listartarea">Volver</button>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </form>
+    </mat-card>
+</div>
+

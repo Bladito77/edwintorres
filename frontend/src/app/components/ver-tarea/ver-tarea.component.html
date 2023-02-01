@@ -1,0 +1,18 @@
+<div class="Title">
+    <h1>Ver tarea</h1>
+</div>
+<div class="container">
+    <mat-card class="card">
+        
+        <mat-card-title>{{tarea.user}}</mat-card-title>
+        <mat-card-content>
+            <p><strong>linea:</strong>{{tarea.linea}} </p>
+            <p><strong>concepto:</strong>{{tarea.concepto}}</p>
+            <p><strong>hora:</strong>{{tarea.horas}} </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button routerLink="/listartarea" mat-raised-button>Volver</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
